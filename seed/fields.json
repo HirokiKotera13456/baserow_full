@@ -1,0 +1,47 @@
+[
+  {
+    "model": "datastores.field",
+    "pk": 1,
+    "fields": {
+      "table": 1,
+      "name": "Name",
+      "type": "text",
+      "required": true,
+      "unique": true,
+      "order": 1,
+      "options": {},
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "datastores.field",
+    "pk": 2,
+    "fields": {
+      "table": 1,
+      "name": "Category",
+      "type": "single_select",
+      "required": false,
+      "unique": false,
+      "order": 2,
+      "options": {"choices": ["Hardware", "Software", "Service"]},
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "datastores.field",
+    "pk": 3,
+    "fields": {
+      "table": 1,
+      "name": "Price",
+      "type": "decimal",
+      "required": false,
+      "unique": false,
+      "order": 3,
+      "options": {},
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]
