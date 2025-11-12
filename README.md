@@ -25,6 +25,33 @@ cp backend/.env.example backend/.env
 cp frontend/.env.local.example frontend/.env.local
 ```
 
+Key variables (default values shown in the templates):
+
+- **Root `.env`**
+  ```dotenv
+  POSTGRES_DB=generic_db
+  POSTGRES_USER=generic_user
+  POSTGRES_PASSWORD=generic_password
+  DJANGO_SECRET_KEY=changeme-in-production
+  DJANGO_DEBUG=1
+  CORS_ALLOWED_ORIGINS=http://localhost:3000
+  ```
+  Adjust the credentials if you need different Postgres values; keep them in sync with `backend/.env`.
+- **backend/.env**
+  ```dotenv
+  DJANGO_SETTINGS_MODULE=config.settings
+  POSTGRES_DB=generic_db
+  POSTGRES_USER=generic_user
+  POSTGRES_PASSWORD=generic_password
+  POSTGRES_HOST=db
+  POSTGRES_PORT=5432
+  ```
+  Add any extra Django environment overrides here (e.g. email backend) if required.
+- **frontend/.env.local**
+  ```dotenv
+  NEXT_PUBLIC_API_BASE=http://localhost:8000/api
+  ```
+  Point this at a different host/port when running the API elsewhere.
 Key variables:
 
 - **Root `.env`**
