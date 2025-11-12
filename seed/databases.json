@@ -1,0 +1,12 @@
+[
+  {
+    "model": "datastores.database",
+    "pk": 1,
+    "fields": {
+      "workspace": 1,
+      "name": "Product Database",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]

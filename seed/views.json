@@ -1,0 +1,13 @@
+[
+  {
+    "model": "datastores.view",
+    "pk": 1,
+    "fields": {
+      "table": 1,
+      "name": "All Products",
+      "config": {"sort": ["Name:asc"], "filter": []},
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]
