@@ -52,6 +52,20 @@ Key variables (default values shown in the templates):
   NEXT_PUBLIC_API_BASE=http://localhost:8000/api
   ```
   Point this at a different host/port when running the API elsewhere.
+Key variables:
+
+- **Root `.env`**
+  - `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD` – database credentials (shared by backend service)
+  - `DJANGO_SECRET_KEY` – Django secret
+  - `DJANGO_DEBUG` – set to `1` for development
+  - `CORS_ALLOWED_ORIGINS` – default `http://localhost:3000`
+- **backend/.env**
+  - `DJANGO_SETTINGS_MODULE=config.settings`
+  - `POSTGRES_HOST=db`
+  - `POSTGRES_PORT=5432`
+  - Plus the same Postgres credentials as root
+- **frontend/.env.local**
+  - `NEXT_PUBLIC_API_BASE=http://localhost:8000/api`
 
 ## Build & run
 
